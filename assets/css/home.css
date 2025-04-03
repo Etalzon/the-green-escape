@@ -1,0 +1,44 @@
+/* Style pour la section des produits */
+.products {
+    display: flex; /* Utilise un conteneur flex pour aligner les éléments */
+    /*flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    /*justify-content: space-around; /* Espace égal autour des éléments */
+    padding: 20px; /* Ajoute un espacement interne de 20px */
+    justify-content: space-between;
+}
+
+/* Style pour chaque produit */
+.product {
+    width: 30%; /* Définit une largeur de 30% pour chaque produit */
+    margin-bottom: 20px; /* Ajoute un espacement en bas de 20px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre légère autour de l'élément */
+    padding: 15px; /* Ajoute un espacement interne de 15px */
+}
+
+.presentation{
+    display: flex;
+}
+
+.valeurs{
+    display: flex;
+    justify-content: space-between;
+}
+.valeurs div{
+    width: 22%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact{
+    background: url("./../images/cartePerigor.png") center center /cover no-repeat ;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10%;
+    box-sizing: border-box;
+}
+.contact-box{
+    background-color: #ffffff;
+    width: 50%;
+    border-radius: 20px;
+    padding: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

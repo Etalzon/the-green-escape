@@ -12,6 +12,7 @@ header {
 
 .logo-container{
     display: flex;
+    gap: 20px;
 }
 .logo {
     height: 80px;
@@ -31,10 +32,9 @@ nav a {
 nav a:hover {
     color: #007BFF;
 }
-
-
-.logoReseaux{
-
+/*logo des reseaux*/
+.logoRéseaux{
+height: 30px;
 }
 
 /* Style pour le pied de page */
