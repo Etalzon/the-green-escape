@@ -29,7 +29,7 @@
 }
 
 .contact{
-    background: url("./../images/cartePerigor.png") center center /cover no-repeat ;
+    background: url("./../images/imgPage/cartePerigor.png") center center /cover no-repeat ;
     display: flex;
     justify-content: flex-start;
     padding: 10%;
