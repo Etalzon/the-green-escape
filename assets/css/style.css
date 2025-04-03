@@ -5,11 +5,18 @@
     --fondSecondaires: #FFFFFF;
 }
 
-body{
+body {
+    font-family: Poppins;
+    margin: 3;
+    padding: 6;
     background-color: var(--fondFrincipal);
+    color: var(--textes);
 }
 
-.titreSite{
-    font-size: large;
-    color: var(--boutonTitre);
+h1, h2, h3, h4{
+    font-family: "Playfair Display", serif;
+}
+
+p, a, span{
+    font-family: "Poppins", sans-serif;
 }
