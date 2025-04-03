@@ -1,0 +1,15 @@
+:root {
+    --boutonTitre: #4CAF50;
+    --fondFrincipal: #F5F5DC;
+    --textes: #333333;
+    --fondSecondaires: #FFFFFF;
+}
+
+body{
+    background-color: var(--fondFrincipal);
+}
+
+.titreSite{
+    font-size: large;
+    color: var(--boutonTitre);
+}
