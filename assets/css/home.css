@@ -1,13 +1,11 @@
-
-
-
-
+/* ================ Contenu de la page d'accueil ============== */
+/* Contenu principal */
 .presentation{
     display: flex;
 }
 
 /* ================ Contenu des valeur ============== */
-/* Conteneur principal */
+/* Contenu principal */
 .container-valeurs{
     margin: 10px;
     padding: 10px;
@@ -26,7 +24,52 @@
     padding: 15px;
 }
 
-/* ================ Contenu global Image ============== */
+
+/* ================ Contenu Image hebergements ============== */
+/* Section hébergements */
+.hebergements {
+    display: flex;
+    justify-content: start;
+}
+/* titre + images */
+.bloc-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne à gauche */
+    gap: 10px;
+}
+/* Titre */
+.bloc-image h2 {
+    margin-left: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Conteneur texte à droite */
+.texteHebergement {
+    max-width: 400px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+}
+/* Bouton style */
+.btnDecouvrir {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btnDecouvrir:hover {
+    background-color: #0056b3;
+}
 .contenu {
     display: flex;
     align-items: center; /* Aligne les images et le texte */
