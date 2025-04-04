@@ -1,4 +1,4 @@
-
+/* ================ Déclaration variable ============== */
 :root {
     --boutonTitre: #4CAF50;
     --fondFrincipal: #F5F5DC;
@@ -6,6 +6,7 @@
     --fondSecondaires: #FFFFFF;
 }
 
+/* ================ Toute la page ============== */
 body {
     font-family: Poppins;
     margin: 0;
@@ -15,14 +16,51 @@ body {
     box-sizing: border-box;
 }
 
+/* ================ aspet de H ============== */
 h1, h2, h3, h4{
     font-family: "Playfair Display", serif;
     color: var(--boutonTitre);
 }
 
+/* ================ aspet de a, span ============== */
 a, span{
     font-family: "Poppins", sans-serif;
     color: var(--textes);
 }
 
+/* Effet au survol du logo */
+.logo:hover {
+    transform: scale(1.1); /* Agrandit le logo */
+    transition: transform 0.3s ease-in-out; /* Animation */
+}
+/* Bouton style */
+.btn{
+    background-color: var(--boutonTitre);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+/* Survol Bouton */
+.btn:hover {
+    background-color: #0056b3;
+}
 
+/* ======= RESPONSIVE DESIGN ======= */
+@media screen and (max-width: 768px) {
+
+    /* @media (min-width: 375px) and (max-width: 768px) { */
+    .btnHeader, .btnDecouvrir  { 
+        padding: 8px 16px; /* Ajustement des bouton */
+
+    }
+    
+    .img { 
+        max-width: 60px; /* Réduction de la taille des images */
+    }
+    
+}

@@ -1,7 +1,29 @@
 /* ================ Contenu de la page d'accueil ============== */
-/* Contenu principal */
-.presentation{
+/* ================ Présentation ============== */
+/* Contenu presentation */
+.presentation .contenu {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* pour rester sur petit écran */
+}
+/* Texte presentation */
+.presentation .texte {
+    flex: 1;
+}
+/* Image presentation */
+.presentation .image-droite {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+/* Image Placement presentation */
+.presentation .image-droite img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 /* ================ Contenu des valeur ============== */
@@ -23,7 +45,6 @@
     border-radius: 5px;
     padding: 15px;
 }
-
 
 /* ================ Contenu Image hebergements ============== */
 /* Section hébergements */
@@ -56,20 +77,7 @@
     gap: 20px;
     font-size: 16px;
 }
-/* Bouton style */
-.btnDecouvrir {
-    background-color: var(--boutonTitre);
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.btnDecouvrir:hover {
-    background-color: #0056b3;
-}
+
 .contenu {
     display: flex;
     align-items: center; /* Aligne les images et le texte */

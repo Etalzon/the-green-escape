@@ -19,24 +19,7 @@ header {
 .logo {
     height: 80px;
 }
-/* Effet au survol du logo */
-.logo:hover {
-    transform: scale(1.1); /* Agrandit le logo */
-    transition: transform 0.3s ease-in-out; /* Animation */
-}
-.btnHeader{
-    background-color:var(--boutonTitre);
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.btnHeader:hover {
-    background-color: #0056b3;
-}
+
 
 
 /* ================ Footer ============== */
