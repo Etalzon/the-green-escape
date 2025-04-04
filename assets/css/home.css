@@ -38,7 +38,7 @@
     align-items: flex-start; /* Aligne à gauche */
     gap: 10px;
 }
-/* Titre */
+/* Titre H2 */
 .bloc-image h2 {
     margin-left: 10px;
     font-size: 24px;
@@ -58,7 +58,7 @@
 }
 /* Bouton style */
 .btnDecouvrir {
-    background-color: #007BFF;
+    background-color: var(--boutonTitre);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -114,6 +114,7 @@
     transform: scale(1.1); /* Agrandit l'image */
     transition: transform 0.3s ease-in-out; /* Animation */
 }
+
 
 /* ================ Contenu de la carte ============== */
 .contact{

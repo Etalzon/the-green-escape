@@ -17,10 +17,12 @@ body {
 
 h1, h2, h3, h4{
     font-family: "Playfair Display", serif;
+    color: var(--boutonTitre);
 }
 
-p, a, span{
+a, span{
     font-family: "Poppins", sans-serif;
+    color: var(--textes);
 }
 
 
