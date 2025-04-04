@@ -112,7 +112,7 @@
 /* ================ Contenu de la carte ============== */
 /* Image de la carte*/
 .contact {
-    background: url("./../images/imgPage/cartePerigor.png") center center /cover no-repeat;
+    background: url("./../images/imgPageAcceuil/cartePerigor.png") center center /cover no-repeat;
     display: flex;
     justify-content: flex-start;
     padding: 10%;
@@ -120,7 +120,7 @@
 }
 /* Image du box */
 .contact-box {
-    background: url("./../images/imgPage/imadeDeco.jpg") center center / cover no-repeat;
+    background: url("./../images/imgPageAcceuil/imadeDeco.jpg") center center / cover no-repeat;
     width: 50%;
     border-radius: 20px;
     padding: 5%;
