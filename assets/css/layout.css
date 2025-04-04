@@ -1,34 +1,40 @@
-/* header */
+/* ================ Header ============== */
 header {
     background-color: var(--boutonTitre);
     padding: 10px 40px;
 }
-
+/* Contenu principal */
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.logo-container{
+/* Contenu du logo */
+.logo-container {
     display: flex;
     gap: 20px;
 }
+/* Style du logo */
 .logo {
     height: 80px;
 }
-
+/* Effet au survol du logo */
+.logo:hover {
+    transform: scale(1.1); /* Agrandit le logo */
+    transition: transform 0.3s ease-in-out; /* Animation */
+}
+/* Barre de navigation */
 nav {
     display: flex;
     gap: 20px;
 }
-
+/* Liens de navigation */
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
-
+/* Effet au survol des liens */
 nav a:hover {
     color: #007BFF;
 }
@@ -37,6 +43,7 @@ nav a:hover {
 height: 30px;
 }
 
+/* ================ Footer ============== */
 /* Style pour le pied de page */
 footer {
     background-color: #333; 
@@ -46,17 +53,14 @@ footer {
     flex-wrap: wrap; 
     justify-content: space-around; 
 }
-
 /* Style pour les divs dans le pied de page */
 footer div {
     margin: 10px; 
 }
-
 /* Style pour les liens dans le pied de page */
 footer a {
     color: #ddd; 
 }
-
 /* Style pour les liens spécifiques dans le pied de page */
 .footer-link {
     margin-top: 15px; 

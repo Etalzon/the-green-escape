@@ -1,33 +1,78 @@
-/* Style pour la section des produits */
-.products {
-    display: flex; /* Utilise un conteneur flex pour aligner les éléments */
-    /*flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-    /*justify-content: space-around; /* Espace égal autour des éléments */
-    padding: 20px; /* Ajoute un espacement interne de 20px */
-    justify-content: space-between;
-}
 
-/* Style pour chaque produit */
-.product {
-    width: 30%; /* Définit une largeur de 30% pour chaque produit */
-    margin-bottom: 20px; /* Ajoute un espacement en bas de 20px */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre légère autour de l'élément */
-    padding: 15px; /* Ajoute un espacement interne de 15px */
-}
+
+
 
 .presentation{
     display: flex;
 }
 
-.valeurs{
+/* ================ Contenu des valeur ============== */
+/* Conteneur principal */
+.container-valeurs{
+    margin: 10px;
+    padding: 10px;
+    text-align:justify;
+}
+/* espace entre les box */
+.valeurs {
     display: flex;
     justify-content: space-between;
 }
+/* Espace entre les divs */
 .valeurs div{
     width: 22%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
 }
 
+/* ================ Contenu global Image ============== */
+.contenu {
+    display: flex;
+    align-items: center; /* Aligne les images et le texte */
+    gap: 10px; /* Espacement entre les images et le texte */
+}
+/* Contenu des images */
+.groupeImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+/* Grande image au-dessus */
+.grande-image {
+    padding: 5px;
+    margin: 0 auto;
+    width: 600px; 
+    height: 300px;
+    border-radius: 10px;
+}
+/* Contenu des petites images */
+.petites-images {
+    display: flex;
+    gap: 10px;
+}
+/* Petites images en bas */
+.petites-images img {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5px;
+}
+/* Texte à droite */
+.texte {
+    margin: 10px;
+    padding: 10px;
+    max-width: 700px;
+}
+/* Effet survol images */
+.groupeImage img:hover {
+    transform: scale(1.1); /* Agrandit l'image */
+    transition: transform 0.3s ease-in-out; /* Animation */
+}
+
+/* ================ Contenu de la carte ============== */
 .contact{
     background: url("./../images/imgPage/cartePerigor.png") center center /cover no-repeat ;
     display: flex;
