@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* pour rester sur petit écran */
+    flex-wrap: wrap;
+    margin: 20px;
 }
 /* Texte presentation */
 .presentation .texte {
@@ -28,10 +29,10 @@
 
 /* ================ Contenu des valeur ============== */
 /* Contenu principal */
-.container-valeurs{
+.container-valeurs {
     margin: 10px;
     padding: 10px;
-    text-align:justify;
+    text-align: justify;
 }
 /* espace entre les box */
 .valeurs {
@@ -39,7 +40,7 @@
     justify-content: space-between;
 }
 /* Espace entre les divs */
-.valeurs div{
+.valeurs div {
     width: 22%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -48,94 +49,116 @@
 
 /* ================ Contenu Image hebergements ============== */
 /* Section hébergements */
-.hebergements {
-    display: flex;
-    justify-content: start;
-}
-/* titre + images */
-.bloc-image {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligne à gauche */
-    gap: 10px;
-}
-/* Titre H2 */
-.bloc-image h2 {
-    margin-left: 10px;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-/* Conteneur texte à droite */
-.texteHebergement {
-    max-width: 400px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    font-size: 16px;
-}
-
 .contenu {
     display: flex;
-    align-items: center; /* Aligne les images et le texte */
-    gap: 10px; /* Espacement entre les images et le texte */
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
 }
-/* Contenu des images */
-.groupeImage {
+/* Colonne gauche */
+.gauche {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+.gauche h2 {
+    display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 24px;
 }
-/* Grande image au-dessus */
+/* grande Image disposition */
 .grande-image {
-    padding: 5px;
-    margin: 0 auto;
-    width: 600px; 
-    height: 300px;
+    display: flex;
+    width: 700px;
+    height: 380px;
+    object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
-/* Contenu des petites images */
+/* Colonne droite */
+.droite {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+/* Images en ligne */
 .petites-images {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    gap: 30px;
 }
-/* Petites images en bas */
+/* Taille petite image */
 .petites-images img {
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    margin: 0 auto;
-    padding: 5px;
 }
-/* Texte à droite */
-.texte {
-    margin: 10px;
-    padding: 10px;
-    max-width: 700px;
+/* Texte dessous petites images */
+.texteHebergement {
+    max-width: 620px;
+    text-align: center;
+    font-size: 16px;
 }
-/* Effet survol images */
-.groupeImage img:hover {
-    transform: scale(1.1); /* Agrandit l'image */
-    transition: transform 0.3s ease-in-out; /* Animation */
+/* Animation images*/
+.gauche img:hover,
+.petites-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
-
 
 /* ================ Contenu de la carte ============== */
-.contact{
-    background: url("./../images/imgPage/cartePerigor.png") center center /cover no-repeat ;
+/* Image de la carte*/
+.contact {
+    background: url("./../images/imgPage/cartePerigor.png") center center /cover no-repeat;
     display: flex;
     justify-content: flex-start;
     padding: 10%;
     box-sizing: border-box;
 }
-.contact-box{
-    background-color: #ffffff;
+/* Image du box */
+.contact-box {
+    background: url("./../images/imgPage/imadeDeco.jpg") center center / cover no-repeat;
     width: 50%;
     border-radius: 20px;
     padding: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    /* fond transparent sur l’image */
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+/* Taille du box */
+.boxTexte {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+    color: #ffffff;
+}
+/* Surcouche foncée translucide pour améliorer la lisibilité */
+.contact-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* opacité sur image */
+    border-radius: 20px;
+    z-index: 0;
+}
+/* Le texte reste par-dessus la surcouche */
+.contact-box p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .valeurs div {
+        width: 100%;
+    }
 }
