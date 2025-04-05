@@ -9,16 +9,19 @@
     flex-wrap: wrap;
     margin: 20px;
 }
+
 /* Texte presentation */
 .presentation .texte {
     flex: 1;
 }
+
 /* Image presentation */
 .presentation .image-droite {
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 /* Image Placement presentation */
 .presentation .image-droite img {
     max-width: 100%;
@@ -27,18 +30,20 @@
     margin: 10px;
 }
 
-/* ================ Contenu des valeur ============== */
+/* ================ Contenu des valeur dans acceuil ============== */
 /* Contenu principal */
 .container-valeurs {
     margin: 10px;
     padding: 10px;
     text-align: justify;
 }
+
 /* espace entre les box */
 .valeurs {
     display: flex;
     justify-content: space-between;
 }
+
 /* Espace entre les divs */
 .valeurs div {
     width: 22%;
@@ -47,7 +52,7 @@
     padding: 15px;
 }
 
-/* ================ Contenu Image hebergements ============== */
+/* ================ Contenu Image hebergements dans acceuil ============== */
 /* Section hébergements */
 .contenu {
     display: flex;
@@ -55,18 +60,21 @@
     gap: 20px;
     margin: 20px;
 }
+
 /* Colonne gauche */
 .gauche {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .gauche h2 {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 24px;
 }
+
 /* grande Image disposition */
 .grande-image {
     display: flex;
@@ -76,6 +84,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 /* Colonne droite */
 .droite {
     display: flex;
@@ -83,12 +92,14 @@
     gap: 10px;
     align-items: center;
 }
+
 /* Images en ligne */
 .petites-images {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
+
 /* Taille petite image */
 .petites-images img {
     width: 400px;
@@ -96,12 +107,14 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
 /* Texte dessous petites images */
 .texteHebergement {
     max-width: 620px;
     text-align: center;
     font-size: 16px;
 }
+
 /* Animation images*/
 .gauche img:hover,
 .petites-images img:hover {
@@ -109,7 +122,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
-/* ================ Contenu de la carte ============== */
+/* ================ Contenu des carte dans acceuil ============== */
 /* Image de la carte*/
 .contact {
     background: url("./../images/imgPageAcceuil/cartePerigor.png") center center /cover no-repeat;
@@ -118,6 +131,7 @@
     padding: 10%;
     box-sizing: border-box;
 }
+
 /* Image du box */
 .contact-box {
     background: url("./../images/imgPageAcceuil/imadeDeco.jpg") center center / cover no-repeat;
@@ -131,6 +145,7 @@
     color: white;
     overflow: hidden;
 }
+
 /* Taille du box */
 .boxTexte {
     display: flex;
@@ -139,15 +154,18 @@
     font-size: large;
     color: #ffffff;
 }
+
 /* Surcouche foncée translucide pour améliorer la lisibilité */
 .contact-box::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* opacité sur image */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* opacité sur image */
     border-radius: 20px;
     z-index: 0;
 }
+
 /* Le texte reste par-dessus la surcouche */
 .contact-box p {
     position: relative;
@@ -157,8 +175,144 @@
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .valeurs div {
-        width: 100%;
-    }
+/* ================ Contenu des box dans Hebergement ============== */
+/* section produits */
+.produits {
+    display: flex;
+    /* Utilise flexbox */
+    flex-wrap: wrap;
+    /* Passe à la ligne */
+    justify-content: space-between;
+    /* Espace entre les colonnes */
+    padding: 20px;
+    /* Espacement */
+}
+/* class produits */
+.produit {
+    width: 48%;
+    /* Deux cartes par ligne avec un peu d'espace entre elles */
+    margin-bottom: 20px;
+    /* Marge en bas */
+    box-shadow: rgba(0, 0, 0, 0.4) 
+    0px 2px 4px, rgba(0, 0, 0, 0.3) 
+    0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 
+    0px -3px 0px inset;
+    /* Ombre légère */
+    padding: 15px;
+    /* Espacement interne */
+    box-sizing: border-box;
+    /* Inclut le padding dans la largeur */
+    border-radius: 10px;
+}
+/* Icone devant les titre */
+.taillIcone {
+    display: flex;
+    align-items: center;
+    /* Aligne l’icône avec le texte */
+    gap: 10px;
+    /* Espace entre l’icône et le texte */
+}
+.taillIcone .iconeTitre {
+    height: 25px;
+    /* Taille de l’icône */
+    width: auto;
+    /* Garde les proportions */
+}
+/* images de produit */
+.produit img {
+    width: 80%;
+    /* Image occupe tout le conteneur */
+}
+
+/* ================ Carrousel de roulotte Hebergement ============== */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 
+    0px 2px 4px, rgba(0, 0, 0, 0.3) 
+    0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 
+    0px -3px 0px inset;
+}
+/* Cacher les input radio */
+input[type="radio"] {
+    display: none;
+}
+/* Slides (les images) */
+.carousel-slides {
+    display: flex;
+    width: 500%; /* 5 images, donc 5 x 100% */
+    transition: transform 0.5s ease;
+}
+.slide {
+    flex: 0 0 20%; /* Chaque image prend 20% */
+    padding: 5px;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Flèches de navigation */
+.carousel-nav label {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+.carousel-nav .prev {
+    left: 10px;
+}
+.carousel-nav .next {
+    right: 10px;
+}
+/* Positionnement des slides avec le radio */
+#slide1a:checked ~ .carousel-slides {
+    transform: translateX(0%);
+}
+#slide2a:checked ~ .carousel-slides {
+    transform: translateX(-20%);
+}
+#slide3a:checked ~ .carousel-slides {
+    transform: translateX(-40%);
+}
+#slide4a:checked ~ .carousel-slides {
+    transform: translateX(-60%);
+}
+#slide5a:checked ~ .carousel-slides {
+    transform: translateX(-80%);
+}
+/* Affichage dynamique des flèches */
+#slide1a:checked ~ .carousel-nav #next1,
+#slide2a:checked ~ .carousel-nav #prev2,
+#slide2a:checked ~ .carousel-nav #next2,
+#slide3a:checked ~ .carousel-nav #prev3,
+#slide3a:checked ~ .carousel-nav #next3,
+#slide4a:checked ~ .carousel-nav #prev4,
+#slide4a:checked ~ .carousel-nav #next4,
+#slide5a:checked ~ .carousel-nav #prev5 {
+    display: block;
+}
+.carte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--fondFrincipal);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 
+    0px 2px 4px, rgba(0, 0, 0, 0.3) 
+    0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 
+    0px -3px 0px inset;
 }

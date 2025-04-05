@@ -27,7 +27,6 @@ a, span{
     font-family: "Poppins", sans-serif;
     color: var(--textes);
 }
-
 /* Effet au survol du logo */
 .logo:hover {
     transform: scale(1.1); /* Agrandit le logo */
@@ -49,7 +48,7 @@ a, span{
 .btn:hover {
     background-color: #0056b3;
 }
-
+   
 /* ======= RESPONSIVE DESIGN ======= */
 @media screen and (max-width: 768px) {
 
@@ -62,5 +61,4 @@ a, span{
     .img { 
         max-width: 60px; /* Réduction de la taille des images */
     }
-    
 }

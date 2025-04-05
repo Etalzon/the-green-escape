@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <header style="background-image: url('assets/images/imgPageAcceuil/banniere.jpg'); background-size: cover; background-position: center;">
+    <header
+        style="background-image: url('assets/images/imgPageAcceuil/banniere.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="logo-container">
                 <a href="index.html">
@@ -24,7 +25,9 @@
                 </a>
                 <h1 class="nomEntreprise">The Green Escape</h1>
             </div>
-            <div class="textCentre"><h4>Reconnectez-vous à la nature</h4></div>
+            <div class="textCentre">
+                <h4>Reconnectez-vous à la nature</h4>
+            </div>
             <div>
                 <nav>
                     <a href="contact.html" class="btn">Contact</a>
@@ -37,36 +40,131 @@
     </header>
 
     <main>
-        <div class="container">
-            <h2>Nos hébergements écoresponsables</h2>
+        <section class="presentation">
+            <div class="contenu">
+                <div class="texte">
+                    <h2 class="taillIcone">
+                        <img class="iconeTitre" src="assets/images/imagePageHeberg/hebergement.png" alt="">
+                        Nos hébergements écoresponsables
+                    </h2>
+                    <p>Découvrez nos hébergements uniques, conçus pour vous immerger dans la nature tout en respectant
+                        l'environnement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="produits">
+            <div class="produit">
+                <img src="assets/images/imagePageHeberg/tinyHouse.jpg" alt="Image TinyHouse">
+                <h3 class="taillIcone"><img class="iconeTitre" src="assets/images/imagePageHeberg/maison-boit.png"
+                        alt="Icone maison-boit">
+                    Tiny House "Natura" – autonomie complète
+                </h3>
+                <ul>
+                    <li>Habitat mobile tout équipé (eau de pluie, panneaux solaires)</li>
+                    <li>Idéale pour 2 adultes + 1 enfant</li>
+                    <li>Isolation écologique + poêle à bois</li>
+                    <li>Prix : 110€/nuit</li>
+                </ul>
+                <a href="panier.html" class="btn">En savoir plus</a>
+            </div>
+
+            <div class="produit">
+                <img src="assets/images/imagePageHeberg/tente-suspendue.jpg" alt="Image tente-suspendue">
+                <h3 class="taillIcone"><img class="iconeTitre" src="assets/images/imagePageHeberg/tente.png"
+                        alt="Icone tente">
+                    Tente suspendue "Lévitée" –immersion totale
+                </h3>
+                <ul>
+                    <li>Installée entre trois arbres centenaires</li>
+                    <li>Accès par une passerelle en bois</li>
+                    <li>Équipement minimaliste + kit bivouac confort</li>
+                    <li>Prix : 80€/nuit</li>
+                </ul>
+                <a href="panier.html" class="btn">En savoir plus</a>
+            </div>
+
+            <div class="produit">
+                <!-- Carrousel à l’intérieur de la carte -->
+                <div class="carousel-container">
+                    <input type="radio" name="carousel1" id="slide1a" checked>
+                    <input type="radio" name="carousel1" id="slide2a">
+                    <input type="radio" name="carousel1" id="slide3a">
+                    <input type="radio" name="carousel1" id="slide4a">
+                    <input type="radio" name="carousel1" id="slide5a">
+                    <div class="carousel-slides">
+                        <div class="slide"><img src="assets/images/imagePageHeberg/roulotte1.jpg" alt="Roulotte 1">
+                        </div>
+                        <div class="slide"><img src="assets/images/imagePageHeberg/roulotte2.jpg" alt="Roulotte 2">
+                        </div>
+                        <div class="slide"><img src="assets/images/imagePageHeberg/roulotte3.jpg" alt="Roulotte 3">
+                        </div>
+                        <div class="slide"><img src="assets/images/imagePageHeberg/roulotte4.jpg" alt="Roulotte 4">
+                        </div>
+                        <div class="slide"><img src="assets/images/imagePageHeberg/roulotte5.jpg" alt="Roulotte 5">
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <label for="slide2a" class="next" id="next1">❯</label>
+                        <label for="slide1a" class="prev" id="prev2">❮</label>
+                        <label for="slide3a" class="next" id="next2">❯</label>
+                        <label for="slide2a" class="prev" id="prev3">❮</label>
+                        <label for="slide4a" class="next" id="next3">❯</label>
+                        <label for="slide3a" class="prev" id="prev4">❮</label>
+                        <label for="slide5a" class="next" id="next4">❯</label>
+                        <label for="slide4a" class="prev" id="prev5">❮</label>
+                    </div>
+                </div>
+                <h3 class="taillIcone">
+                    <img class="iconeTitre" src="assets/images/imagePageHeberg/roulotte-de-voyage.png"
+                        alt="Icone roulotte">
+                    Roulotte "Bohème" – sur prairie fleurie
+                </h3>
+                <ul>
+                    <li>Ancienne roulotte restaurée avec charme</li>
+                    <li>Ambiance bois brut et tissus naturels</li>
+                    <li>Capacité : 2 à 3 personnes</li>
+                    <li>Prix : 95€/nuit</li>
+                </ul>
+                <a href="panier.html" class="btn">En savoir plus</a>
+            </div>
+
+            <div class="produit">
+                <img src="assets/images/imagePageHeberg/cabaneArbre.jpg" alt="Image d'une Cabane dans les arbres">
+                <h3 class="taillIcone"><img class="iconeTitre"
+                        src="assets/images/imagePageHeberg/cabane-dans-les-arbres.png"
+                        alt="Icone cabane-dans-les-arbres">
+                    Cabane "Sylva" – dans les arbres
+                </h3>
+                <ul>
+                    <li>Perchée à 5 mètres du sol, avec vue sur la vallée</li>
+                    <li>Terrasse suspendue avec hamac</li>
+                    <li>Capacité : 2 personnes</li>
+                    <li>Prix : 120€/nuit</li>
+                </ul>
+                <a href="panier.html" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+
+        <section class="carte">
             <div>
-                <p>Découvrez nos hébergements uniques, conçus pour vous immerger dans la nature tout en respectant
-                    l'environnement.
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44853.52716508444!2d0.5900804836696608!3d45.36202374435732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ff0bcfb497610b%3A0x406651748180f80!2zQnJhbnTDtG1lLCAyNDMxMCBCcmFudMO0bWUgZW4gUMOpcmlnb3Jk!5e0!3m2!1sfr!2sfr!4v1743883115581!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <p>📍<strong>Localisation</strong><br>
+                    Nous sommes implantés dans un domaine forestier de 12 hectares à proximité de Brantôme, en Dordogne.
+                    Chaque hébergement est isolé visuellement des autres pour garantir intimité et silence absolu.
                 </p>
             </div>
-            
-        </div>
-        <div class="products">
-            <div class="product">
-              <img src="" alt="">
-              <h3>Produit 1</h3>
-              <p>Cabane "Sylva" – dans les arbres</p>
-              
-            </div>
-        
-            <div class="product">
-              <img src="" alt="">
-              <h3>Produit 2</h3>
-              <p> Roulotte "Bohème" – sur prairie fleurie</p>
-            </div>
-        
-            <div class="product">
-              <img src="" alt="">
-              <h3>Produit 3</h3>
-              <p>Tente suspendue "Lévitée" – immersion totale</p>
-              
-            </div>
-          </div>
+        </section>
+
+
+
     </main>
 
     <footer>
