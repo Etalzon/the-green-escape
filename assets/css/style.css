@@ -1,101 +1,168 @@
 /* ================ Déclaration variable ============== */
 :root {
-    --boutonTitre: #4CAF50;
-    --fondFrincipal: #F5F5DC;
-    --textes: #333333;
-    --fondSecondaires: #FFFFFF;
+  --boutonTitre: #4CAF50;
+  --fondFrincipal: #F5F5DC;
+  --textes: #333333;
+  --fondSecondaires: #FFFFFF;
 }
 
 /* ================ Toute la page ============== */
 body {
-    font-family: Poppins;
-    margin: 0;
-    padding: 0;
-    background-color: var(--fondFrincipal);
-    color: var(--textes);
-    box-sizing: border-box;
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  background-color: var(--fondFrincipal);
+  color: var(--textes);
+  box-sizing: border-box;
 }
 
 /* ================ aspet de H ============== */
-h1, h2, h3{
-    font-family: "Playfair Display", serif;
-    color: var(--boutonTitre);
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: var(--boutonTitre);
 }
 
 h5 {
-    font-family: "Poppins", sans-serif;
-    color: var(--textes);
-    font-size: x-large;
+  font-family: "Poppins", sans-serif;
+  color: var(--textes);
+  font-size: x-large;
 }
+
 /* ================ aspet premiere lettre <p> ============== */
 p::first-letter {
-    font-family: "Playfair Display", serif;
-    color: var(--boutonTitre);
-    font-size: 2em; /* optionnel, pour mettre la première lettre en valeur */
-    font-weight: bold; /* optionnel */
+  font-family: "Playfair Display", serif;
+  color: var(--boutonTitre);
+  font-size: 2em;
+  /* optionnel, pour mettre la première lettre en valeur */
+  font-weight: bold;
+  /* optionnel */
 }
 
 /* ================ aspet de a, span ============== */
-a, span{
-    font-family: "Poppins", sans-serif;
-    color: var(--textes);
+a,
+span {
+  font-family: "Poppins", sans-serif;
+  color: var(--textes);
 }
+
 /* Effet au survol du logo */
 .logo:hover {
-    transform: scale(1.1); /* Agrandit le logo */
-    transition: transform 0.3s ease-in-out; /* Animation */
+  transform: scale(1.1);
+  /* Agrandit le logo */
+  transition: transform 0.3s ease-in-out;
+  /* Animation */
 }
 
 /* ================ Style des bouton ============== */
 /* Bouton style */
-.btn{
-    background-color: var(--boutonTitre);
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+.btn {
+  background-color: var(--boutonTitre);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
+
 /* Survol Bouton */
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-/* ======= Image renger a l'horizontal ======= */   
+
+/* ======= Image renger a l'horizontal ======= */
 .image-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap; /* ou wrap si tu veux que ça passe à la ligne en petit écran */
-    gap: 10px; /* espace entre les images */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  /* ou wrap si tu veux que ça passe à la ligne en petit écran */
+  gap: 10px;
+  /* espace entre les images */
 }
 
 .image-row img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
+
 .image-row img {
-    height: 200px; /* ou ce que tu veux */
-    width: auto;
+  height: 200px;
+  /* ou ce que tu veux */
+  width: auto;
+}
+
+.taillIconeSeul {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  /* centre horizontalement */
+}
+
+.iconeSeul {
+  height: 100%;
+  /* pour que l’image remplisse les 30px de hauteur */
+}
+
+/* ======= formulair contact ======= */
+.form-container {
+  display: flex; /* Flexbox pour positionner les éléments à l'intérieur */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+form {
+  margin: 0 auto 30px auto; /* Centre le formulaire ajoute une marge bas de 30px */
+}
+
+label {
+  display: block; /* Le label prend toute la largeur */
+  margin-bottom: 5px; /* Espace entre le label */
+  font-weight: bold; /* Texte en gras du label */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Les champs prennent toute la largeur dispo */
+  padding: 10px; /* Espace intérieur */
+  margin-bottom: 15px; /* Espace entre les champs */
+  border: 1px solid #ccc;  /* Bordure grise claire */
+  border-radius: 5px; /* Bords arrondis */
+  box-sizing: border-box; /* les bordures et padding dans la largeur */
+}
+
+.contact-info {
+  background-color: #fff;      /* Fond blanc */
+  padding: 20px;               /* Espace intérieur */
+  border-radius: 10px;         /* Bords bien arrondis */
+  max-width: 500px;            /* Largeur maximale */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Ombre légère autour de la boîte */
+  margin-bottom: 30px;         /* Espace en bas */
+}
+
+.centTitre {
+  text-align: center;          /* Titre centré */
+  font-size: 2em;              /* Taille du texte 2 fois plus grande */
+  margin-bottom: 20px;         /* Espace sous le titre */
+}
+
+.styleCoordonnees {
+  background-color: #fff;      /* Fond blanc */
+  padding: 20px;               /* Espace intérieur */
+  border-radius: 10px;         /* Bords arrondis */
+  max-width: 500px;            /* Largeur maximale */
+  margin: 0 auto 30px auto;    /* Centré horizontalement + marge en bas */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Ombre légère autour */
+  text-align: center;          /* Texte centré (utile pour des coordonnées ou infos personnelles) */
 }
 
 /* ======= RESPONSIVE DESIGN ======= */
-/* Media queries pour les écrans de moins de 768px */
-@media screen and(max-width: 768px) {
-    .presentation .contenu {
-        flex-direction: column;
-        align-items: center;
-    }
-    .presentation .image-droite {
-        order: -1; /* Met l'image à gauche sur les petits écrans */
-    }
-    .avis-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}

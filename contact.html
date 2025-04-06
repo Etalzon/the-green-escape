@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <header style="background-image: url('assets/images/imgPageAcceuil/banniere.jpg'); background-size: cover; background-position: center;">
+    <header
+        style="background-image: url('assets/images/imgPageAcceuil/banniere.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="logo-container">
                 <a href="index.html">
@@ -24,7 +25,9 @@
                 </a>
                 <h1 class="nomEntreprise">The Green Escape</h1>
             </div>
-            <div class="textCentre"><h4>Reconnectez-vous à la nature</h4></div>
+            <div class="textCentre">
+                <h4>Reconnectez-vous à la nature</h4>
+            </div>
             <div>
                 <nav>
                     <a href="contact.html" class="btn">Contact</a>
@@ -37,8 +40,57 @@
     </header>
 
     <main>
-      <div>Page contact en attente</div>
+        <h2 class="centTitre">Contactez-nous</h2>
+        <div class="form-container">
 
+            <form action="#" method="post">
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
+
+                <label for="email">Adresse e-mail :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="sujet">Sujet :</label><br>
+                <input type="text" id="sujet" name="sujet" required><br><br>
+
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" cols="33" required></textarea><br><br>
+
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <h2 class="centTitre">Nos coordonnées</h2>
+        <div class="styleCoordonnees">
+            
+            <p>
+                Société The Green Escape<br>
+                1233 chemin de la nature<br>
+                24310 Brantôme en Périgord<br>
+                Téléphone : 01 02 03 04 05<br>
+                Email : TheGreenEscape@france.fr
+            </p>
+        </div>
+
+        <section class="cartes">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44853.52716508444!2d0.5900804836696608!3d45.36202374435732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ff0bcfb497610b%3A0x406651748180f80!2zQnJhbnTDtG1lLCAyNDMxMCBCcmFudMO0bWUgZW4gUMOpcmlnb3Jk!5e0!3m2!1sfr!2sfr!4v1743883115581!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <p>📍<strong>Localisation</strong><br>
+                    Nous sommes implantés dans un domaine forestier de 12 hectares à proximité de Brantôme, en Dordogne.
+                    Chaque hébergement est isolé visuellement des autres pour garantir intimité et silence absolu.
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer>
