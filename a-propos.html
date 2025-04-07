@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <meta name="description"
+        content="The Green Escape est une entreprise d'écotourisme qui propose des hébergements écoresponsables et des activités en pleine nature.">
+    <meta name="keywords" content="écotourisme, hébergements écoresponsables, nature, déconnexion, Périgord Vert">
+    <title>A propos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,30 +19,34 @@
 </head>
 
 <body>
-    <header
-        style="background-image: url('assets/images/imgPageAcceuil/banniere.jpg'); background-size: cover; background-position: center;">
+    <header>
         <div class="container">
+            
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="assets/images/logo/logoEcotourisme.png" alt="Logo" class="logo">
+                    <img class="logo" src="assets/images/logo/logoEcotourisme.png" alt="Icone Logo">
                 </a>
                 <h1 class="nomEntreprise">The Green Escape</h1>
             </div>
-            <div class="textCentre">
-                <h4>Reconnectez-vous à la nature</h4>
-            </div>
-            <div>
-                <nav>
-                    <a href="contact.html" class="btn">Contact</a>
-                    <a href="a-propos.html" class="btn">A propos</a>
-                    <a href="hebergement.html" class="btn">Nos hébergements écoresponsables</a>
-                </nav>
-            </div>
 
+            <nav class="navigation">
+                <a href="contact.html" class="btn">Contact</a>
+                <a href="a-propos.html" class="btn">À propos</a>
+                <a href="hebergement.html" class="btn">Nos hébergements</a>
+            </nav>
+            
+            <div class="cacheBurger">
+                <a href="#" id="menuToggle">&#9776;</a>
+            </div>
+            
         </div>
     </header>
 
     <main>
+        <section class="banniere">
+            <img src="assets/images/imgPageAcceuil/banniere.jpg" alt="Image banniere">
+            <h2 class="textBanniere">Reconnectez-vous à la nature</h2>
+        </section>
         <section class="presentation">
             <div class="contenu">
                 <div class="texte">
@@ -184,14 +191,14 @@
 
             <nav class="footer-link">
                 <a href="https://instagram.com/" target="_blank"><img class="logoRéseaux"
-                        src="assets/images/logo/Logo-instagram.png" alt="Instagram">
+                        src="assets/images/logo/Logo-instagram.png" alt="ligo Instagram">
                     <i class="fab fa-facebook"></i>Instagram
                 </a>
             </nav>
 
             <nav class="footer-link">
                 <a href="https://x.com/" target="_blank"><img class="logoRéseaux" src="assets/images/logo/LogoX.png"
-                        alt="LogoX">
+                        alt="logoX">
                     <i class="fab fa-facebook"></i>X-Twitter
                 </a>
             </nav>
@@ -200,7 +207,7 @@
         <div>
             <p>© 2025 Mon Site. Tous droits réservés.</p>
             <a href="index.html">
-                <img src="assets/images/logo/logoEcotourisme.png" alt="Logo" class="logo">
+                <img class="logo" src="assets/images/logo/logoEcotourisme.png" alt="iconeLogo">
             </a>
         </div>
     </footer>
