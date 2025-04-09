@@ -2,153 +2,245 @@
 /* Contenu presentation */
 .presentation .contenu {
     display: flex;
+    /* Active le modèle Flexbox */
     align-items: center;
+    /* Aligne verticalement les éléments au centre */
     justify-content: space-between;
+    /* Répartit l'espace entre les éléments */
     gap: 20px;
+    /* Ajoute un espace de 20px entre les éléments */
     flex-wrap: wrap;
+    /* Permet le retour à la ligne si nécessaire */
     margin: 20px;
+    /* Marge extérieure de 20px sur tous les côtés */
 }
 
 /* Texte presentation */
 .presentation .texte {
     flex: 1;
+    /* Permet au bloc de prendre l'espace disponible */
 }
 
 /* Image presentation */
 .presentation .image-droite {
     flex: 1;
+    /* Donne la même largeur qu'au bloc texte */
     display: flex;
+    /* Active Flexbox pour ce conteneur */
     justify-content: center;
+    /* Centre l'image horizontalement */
 }
 
 /* Image Placement presentation */
 .presentation .image-droite img {
     max-width: 100%;
+    /* Limite la largeur à 100% du conteneur */
     height: auto;
+    /* Maintient les proportions de l'image */
     border-radius: 10px;
+    /* Arrondit les coins de l'image */
     margin: 10px;
+    /* Marge extérieure de 10px autour de l'image */
 }
 
 /* ================ Avis Clients dans Acceuil ============== */
+/* Section principale */
 .avis-clients {
     padding: 60px 20px;
+    /* Padding haut/bas 60px, gauche/droite 20px */
     background: linear-gradient(to right, #e0f7fa, #ffffff);
+    /* Dégradé horizontal bleu clair à blanc */
     text-align: center;
+    /* Alignement central du texte */
 }
 
+/* Titre principal */
 .avis-clients h2 {
     font-size: 2.5em;
+    /* Taille de police très grande (2.5x normale) */
     color: #00695c;
+    /* Couleur vert foncé */
     margin-bottom: 40px;
+    /* Marge basse importante */
 }
 
+/* Conteneur des avis */
 .avis-container {
     display: flex;
+    /* Active Flexbox */
     flex-wrap: wrap;
+    /* Permet le retour à la ligne */
     justify-content: center;
+    /* Centre les éléments horizontalement */
     gap: 30px;
+    /* Espace de 30px entre les cartes */
 }
 
+/* Carte d'avis individuelle */
 .avis {
     background-color: #ffffff;
+    /* Fond blanc */
     border-radius: 20px;
+    /* Coins très arrondis */
     padding: 30px;
+    /* Espace intérieur important */
     width: 300px;
+    /* Largeur fixe des cartes */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
     text-align: left;
+    /* Alignement du texte à gauche */
     position: relative;
+    /* Position relative pour enfants absolus */
     transition: transform 0.3s;
+    /* Animation fluide */
 }
 
+/* Effet hover sur les avis */
 .avis:hover {
     transform: translateY(-5px);
+    /* Légère élévation au survol */
 }
 
+/* Étoiles de notation */
 .avis .etoiles {
     font-size: 1.2em;
+    /* Taille des étoiles légèrement agrandie */
     color: #ffb400;
+    /* Couleur jaune/orange */
     margin-bottom: 15px;
+    /* Espace sous les étoiles */
 }
 
+/* Texte de l'avis */
 .avis p {
     font-style: italic;
+    /* Texte en italique */
     color: #333;
+    /* Couleur gris foncé */
     margin-bottom: 15px;
+    /* Marge basse */
     line-height: 1.5em;
+    /* Interligne confortable */
 }
 
+/* Nom du client */
 .avis strong {
     color: #00796b;
+    /* Couleur vert moyen */
 }
 
 /* ================ Contenu Image dans acceuil ============== */
 /* Section hébergements */
 .contenu {
     display: flex;
+    /* Active le modèle de boîte flexible */
     align-items: flex-start;
+    /* Aligne les éléments sur le haut du conteneur */
     gap: 20px;
+    /* Espace de 20px entre les éléments enfants */
     margin: 20px;
+    /* Marge extérieure de 20px autour du conteneur */
+
 }
+
+.texteLargeur {
+    max-width: 800px;     /* Largeur maximale du bloc */
+    margin: 0 auto;       /* Centre le bloc horizontalement */
+    padding: 20px;        /* Espace intérieur */
+    line-height: 1.6;     /* Meilleure lisibilité du texte */
+    font-family: "Poppins";
+    font-size: 130%;
+  }
 
 /* Colonne gauche */
 .gauche {
     display: flex;
+    /* Active le modèle de boîte flexible */
     flex-direction: column;
+    /* Dispose les enfants en colonne (vertical) */
     gap: 10px;
+    /* Espace de 10px entre les éléments enfants */
 }
 
 .gauche h2 {
     display: flex;
+    /* Active le modèle de boîte flexible */
     align-items: center;
+    /* Centre les éléments verticalement */
     gap: 10px;
+    /* Espace de 10px entre les éléments enfants */
     font-size: 24px;
+    /* Taille de police de 24px */
 }
 
 /* grande Image disposition */
 .grande-image {
     display: flex;
+    /* Active le modèle de boîte flexible */
     width: 700px;
+    /* Largeur fixe de 700px */
     height: 380px;
+    /* Hauteur fixe de 380px */
     object-fit: cover;
+    /* L'image couvre toute la zone en conservant son ratio */
     border-radius: 10px;
+    /* Coins arrondis de 10px */
     margin-bottom: 20px;
+    /* Marge en bas de 20px */
 }
 
 /* Colonne droite */
 .droite {
     display: flex;
+    /* Active le modèle de boîte flexible */
     flex-direction: column;
+    /* Dispose les enfants en colonne (vertical) */
     gap: 10px;
+    /* Espace de 10px entre les éléments enfants */
     align-items: center;
+    /* Centre les éléments horizontalement */
 }
 
 /* Images en ligne */
 .petites-images {
     display: flex;
+    /* Active le modèle de boîte flexible */
     flex-direction: row;
+    /* Dispose les enfants en ligne (horizontal) */
     gap: 30px;
+    /* Espace de 30px entre les éléments enfants */
 }
 
 /* Taille petite image */
 .petites-images img {
     width: 400px;
+    /* Largeur fixe de 400px */
     height: 200px;
+    /* Hauteur fixe de 200px */
     object-fit: cover;
+    /* L'image couvre toute la zone en conservant son ratio */
     border-radius: 10px;
+    /* Coins arrondis de 10px */
 }
 
 /* Texte dessous petites images */
 .texteHebergement {
     max-width: 620px;
+    /* Largeur maximale de 620px */
     text-align: center;
+    /* Texte centré */
     font-size: 16px;
+    /* Taille de police de 16px */
 }
 
 /* Animation images*/
 .gauche img:hover,
 .petites-images img:hover {
     transform: scale(1.05);
+    /* Agrandit l'image à 105% de sa taille au survol */
     transition: transform 0.3s ease-in-out;
+    /* Animation fluide de 0.3s pour l'agrandissement */
 }
 
 /* ================ Contenu page Hebergement ============== */
@@ -162,22 +254,6 @@
     /* Espace entre les colonnes */
     padding: 20px;
     /* Espacement */
-}
-
-/* ================ menu deroulant ============== */
-.bloc-texte-menu {
-    display: flex;
-    /* Active le layout Flexbox */
-    justify-content: space-between;
-    /* Répartit l'espace entre les éléments */
-    align-items: flex-start;
-    /* Aligne les éléments en haut */
-    gap: 40px;
-    /* 40px d'espace entre les éléments */
-    margin-top: 20px;
-    /* Marge haute de 20px */
-    flex-wrap: wrap;
-    /* Permet le retour à la ligne si manque d'espace */
 }
 
 /*Réinitilaisation de la liste déroulante*/
@@ -243,13 +319,18 @@ select option[value="4"] {
 /* Mise en forme de la balise select*/
 select {
     width: 100%;
+    /* Prend toute la largeur */
     height: 100%;
+    /* Prend toute la hauteur */
     margin: 0;
+    /* Pas de marge */
     padding-left: 15px;
+    /* Marge intérieure gauche */
     color: #555555;
+    /* Couleur de texte gris foncé */
     cursor: pointer;
+    /* Curseur en forme de main */
 }
-
 
 /* Mise en place de la flèche */
 .select::after {
@@ -280,17 +361,13 @@ select {
     /* Change la couleur en orange au survol */
 }
 
-
-/* ==class produits== */
+/* ============== class produits =============== */
 .produit {
     width: 48%;
     /* Deux cartes par ligne avec un peu d'espace entre elles */
     margin-bottom: 20px;
     /* Marge en bas */
-    box-shadow: rgba(0, 0, 0, 0.4) 
-    0px 2px 4px, rgba(0, 0, 0, 0.3) 
-    0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 
-    0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     /* Ombre légère */
     padding: 15px;
     /* Espacement interne */
@@ -299,110 +376,167 @@ select {
     border-radius: 10px;
 }
 
-/* ==Icone devant les titre== */
-.taillIcone {
-    display: flex;
-    align-items: center;
-    /* Aligne l’icône avec le texte */
-    gap: 10px;
-    /* Espace entre l’icône et le texte */
-}
+/* =========== Icone devant les titre ============== */
 
 .taillIcone .iconeTitre {
     height: 25px;
-    /* Taille de l’icône */
     width: auto;
-    /* Garde les proportions */
     vertical-align: middle;
-    /* Aligne l'icône avec le texte */
+} 
+
+.taillIconeSeul {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+/* ================ menu deroulant ============== */
+.bloc-texte-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
+/* ========== centre icone et texte a propos ======= */
+.centtest {
+    display: flex;
+    align-items: center;       /* centre verticalement */
+    justify-content: center;   /* centre horizontalement */
+    gap: 10px;                 /* espace entre l’image et le texte */
+    text-align: center;        /* pour les textes internes */
+    margin-top: 20px;          /* optionnel pour espacer */
+  }
+  
+  .iconeTitre1 {
+    height: 25px;              /* taille de l’icône */
+  }
+  
 /* ==images de produit== */
 .produit img {
     width: 100%;
     /* Largeur de l’image */
 }
 
+
+
 /* ================ Carrousel de roulotte Hebergement ============== */
+/* Conteneur principal du carrousel */
 .carousel-container {
     position: relative;
+    /* Position relative pour les éléments enfants absolus */
     width: 100%;
+    /* Prend toute la largeur disponible */
     overflow: hidden;
+    /* Cache tout contenu qui dépasse */
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* Coins arrondis */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* Ombre portée */
 }
 
-/* ==Cacher les input radio== */
+/* Masquer les boutons radio */
 input[type="radio"] {
     display: none;
+    /* Cache les inputs radio (ils sont utilisés pour la navigation) */
 }
 
 /* Slides (les images) */
 .carousel-slides {
     display: flex;
+    /* Disposition en flexbox */
     width: 500%;
-    /* 5 images, donc 5 x 100% */
+    /* Largeur = 5 slides × 100% (car 5 images) */
     transition: transform 0.5s ease;
+    /* Animation fluide du défilement */
 }
 
+/* Style des slides individuelles */
 .slide {
     flex: 0 0 20%;
-    /* Chaque image prend 20% */
+    /* Chaque slide prend 20% de la largeur (5 slides au total) */
     padding: 5px;
+    /* Marge intérieure pour l'espacement */
 }
 
 .slide img {
     width: 100%;
+    /* Image occupe toute la largeur du slide */
     height: auto;
+    /* Hauteur ajustée automatiquement */
     display: block;
+    /* Évite les espaces indésirables sous l'image */
     border-radius: 10px;
+    /* Coins arrondis */
     object-fit: cover;
+    /* L'image couvre toute la zone sans déformation */
 }
 
 /* Flèches de navigation */
 .carousel-nav label {
     position: absolute;
+    /* Position absolue par rapport au conteneur */
     top: 45%;
+    /* Position verticale au milieu */
     transform: translateY(-50%);
+    /* Centrage précis */
     font-size: 2rem;
+    /* Taille du texte (flèche) */
     color: #fff;
+    /* Couleur blanche */
     background: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent */
     padding: 5px 10px;
+    /* Espacement interne */
     border-radius: 50%;
+    /* Forme circulaire */
     cursor: pointer;
+    /* Curseur en forme de main */
     display: none;
+    /* Masqué par défaut */
     z-index: 2;
+    /* Au-dessus des slides */
 }
 
 .carousel-nav .prev {
     left: 10px;
+    /* Flèche "précédent" à gauche */
 }
 
 .carousel-nav .next {
     right: 10px;
+    /* Flèche "suivant" à droite */
 }
 
-/* Positionnement des slides avec le radio */
+/* Défilement des slides via les boutons radio */
 #slide1a:checked~.carousel-slides {
     transform: translateX(0%);
 }
 
+/* Slide 1 */
 #slide2a:checked~.carousel-slides {
     transform: translateX(-20%);
 }
 
+/* Slide 2 */
 #slide3a:checked~.carousel-slides {
     transform: translateX(-40%);
 }
 
+/* Slide 3 */
 #slide4a:checked~.carousel-slides {
     transform: translateX(-60%);
 }
 
+/* Slide 4 */
 #slide5a:checked~.carousel-slides {
     transform: translateX(-80%);
 }
 
+/* Slide 5 */
 /* Affichage dynamique des flèches */
 #slide1a:checked~.carousel-nav #next1,
 #slide2a:checked~.carousel-nav #prev2,
@@ -413,6 +547,7 @@ input[type="radio"] {
 #slide4a:checked~.carousel-nav #next4,
 #slide5a:checked~.carousel-nav #prev5 {
     display: block;
+    /* Affiche la flèche appropriée */
 }
 
 /* ================ Carte google ============== */
@@ -483,6 +618,17 @@ input[type="radio"] {
     padding: 15px;
 }
 
+.image-droite .imageAmis {
+    display: flex;
+    transform: scaleX(2);
+    /* 1.5 = 150% de la largeur d'origine */
+    width: 30%;
+    /* 100% de la largeur du conteneur (.image-droite) */
+    height: auto;
+    /* Maintient le ratio d'origine */
+}
+
+
 /* ======= RESPONSIVE DESIGN ======= */
 @media screen and (max-width: 1024) {}
 
@@ -529,6 +675,7 @@ input[type="radio"] {
     }
 }
 
+/* =========== Menu Burger ============== */
 @media screen and (max-width: 756px) {
     .cacheBurger {
         display: inline;

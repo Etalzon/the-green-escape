@@ -8,7 +8,7 @@
 
 /* ================ body des page ============== */
 body {
-  font-family: Poppins;
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
   background-color: var(--fondFrincipal);
@@ -17,11 +17,17 @@ body {
 }
 
 /* ================ Style des H ============== */
-h1,
+h1{
+  font-family: "Playfair Display", serif;
+  color: var(--boutonTitre);
+  font-size: 300%;
+}
+
 h2,
 h3 {
   font-family: "Playfair Display", serif;
   color: var(--boutonTitre);
+  font-size: 200%;
 }
 
 h5 {
@@ -75,6 +81,7 @@ span {
   font-family: "Poppins", sans-serif;
   color: var(--textes);
 }
+
 /* Effet au survol du logo */
 .logo:hover {
   transform: scale(1.1);
@@ -89,9 +96,8 @@ span {
   background-color: var(--boutonTitre);
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
@@ -103,31 +109,27 @@ span {
 
 /* ======= Image renger a l'horizontal ======= */
 .image-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  gap: 10px;
+  display: flex; /* flexbox pour positionner les elements à l'interieur */
+  flex-direction: row; /* éléments aligner horizontalement dans le conteneur. */
+  justify-content: center; /* éléments centrés horizontalement dans le conteneur. */
+  align-items: flex-start; /* éléments alignés en haut du conteneur. */
+  flex-wrap: nowrap; /* Les éléments reste sur une seule ligne. */
+  gap: 10px; /* espace entre chaque élément (horizontalement). */
 }
+
 .image-row img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+  max-width: 100%;  /* largeur maximale */
+  height: auto; /* hauteur */
+  display: block; /* affichage block */
+  object-fit: cover; /* ajoustement objet: couvert*/
 }
+
 .image-row img {
-  height: 200px;
+  height: 200px; /* hauteur */
   width: auto;
 }
-.taillIconeSeul {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-.iconeSeul {
-  height: 100%;
-}
+
+
 
 /* ======= formulair contact ======= */
 .form-container {
@@ -183,14 +185,4 @@ textarea {
   text-align: center;          /* Texte centré (utile pour des coordonnées ou infos personnelles) */
 }
 
-/* ======= RESPONSIVE DESIGN ======= */
-
-@media screen and (max-width: 1024) {
-    
-}
-@media screen and (max-width: 990px) {
-    
-}
-@media screen and (max-width: 756px) {
-    
-}
+/* ======= Bouton Navigation ======= */
